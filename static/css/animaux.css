@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: rgb(237, 222, 52);
+}
+.alignementAnimal {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.animal {
+  width: 190px;
+  height: 115px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 22px;
+  padding: 10px;
+  background-color: #ffac40;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.animal:hover {
+  background-color: #88d0fa;
+  cursor: pointer;
+}
+
+header {
+  background-color: #f4f4f488;
+  padding: 1em;
+}
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav a:hover {
+  color: #f00;
+}
+
+main {
+  padding: 2em;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 0.5em 1em;
+  background-color: #f00;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn-primary:hover {
+  background-color: #c00;
+}
+
+#pet {
+  font-size: 190 px;
+  font-weight: bolder;
+}
+#recherche {
+  align-items: flex-end;
+  flex-direction: column;
+  display: flex;
+  height: 190 px;
+}
+#texte {
+  font-size: larger;
+  font-weight: bold;
+}
+#keyword {
+  padding: 0.4em;
+}
+#lien_adoption {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  color: rgb(228, 88, 88);
+
+  background-color: #b3ed68;
+  padding-top: 0.8em;
+  padding: 0.5em;
+  border-radius: 10px;
+  margin-bottom: 10em;
+}
+#lien_adoption:hover {
+  background-color: #ffb0ad;
+  cursor: pointer;
+}
+#chien {
+  width: 59%;
+  height: 30%;
+}
+#imageChien {
+  margin-left: 20%;
+  margin-right: 50%;
+  display: block;
+  width: 70%;
+}
+.card2 {
+  width: 40%;
+  display: inline-block;
+  background-color: #ffba00;
+  margin-top: 0px;
+  height: 50%;
+}
+.ext {
+  font-size: 20px;
+}
+.formulaireAdoption {
+  background-color: #ffb0adcb;
+}
+.error{
+ color: #f00;
+}
+.erreurpage{
+  margin-left: 80px;
+  font-size: 17px;
+}

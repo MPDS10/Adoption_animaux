@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoption d'animaux de compagnie</title>
+    <link rel="stylesheet" href="/css/animaux.css">
+    <script src="/js/script.js"></script>
+</head>
+
+<body>
+    <div>
+        <header>
+            <img src="/images/chimpanzee.jpeg" alt="chimpanzee">
+            <span id="pet">
+                PETLANDIA
+            </span>
+            <nav>
+                <span id="recherche">
+                    <form action="{{url_for('query')}}">
+                        <input type="text" id="keyword" name="q">
+                        <button class="btn-primary"> Recherche</button>
+                    </form>
+                </span>
+            </nav>
+        </header>
+        <main>
+            <h1>Adoptez votre animal de compagnie</h1>
+            <p id="texte">Vous cherchez un animal de compagnie ? Ou vous voulez mettre votre animal en adoption, faites
+                vous plaisir et parcourez notre sélection d'animaux disponibles à l'adoption.</p>
+            <br>
+            <img src="/images/chien.jpeg" alt="chien" id="chien">
+            <br>
+            <a href="/form">
+                <span id="lien_adoption">
+                    Mettre en adoption
+                </span>
+            </a>
+
+
+        </main>
+
+
+        </span>
+    </div>
+
+    <div class="alignementAnimal">
+        {% for i in range(5) %}
+        <a href="/animal/{{animaux[i].get('id')}}">
+            <div class="animal">
+                {{animaux[i].get("nom")}}
+                <br>
+                <p id="race"> {{animaux[i].get("race")}} </p>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+</body>
+
+</html>

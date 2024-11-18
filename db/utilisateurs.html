@@ -1,0 +1,30 @@
+{% extends 'page_reference.html' %}
+
+{% block title %}Gestion des Utilisateurs - CMS Simplifié{% endblock %}
+
+{% block content %}
+<section class="utilisateurs">
+    <h2>Gestion des utilisateurs</h2>
+    <form action="/gestion_utilisateurs" method="POST">
+        <label for="nom_utilisateur">Nom d'utilisateur:</label>
+        <input type="text" id="nom_utilisateur" name="nom_utilisateur" required>
+        
+        <label for="prenom_utilisateur">Prénom:</label>
+        <input type="text" id="prenom_utilisateur" name="prenom_utilisateur" required>
+        
+        <label for="email_utilisateur">Email:</label>
+        <input type="email" id="email_utilisateur" name="email_utilisateur" required>
+        
+        <label for="photo_utilisateur">Photo de profil:</label>
+        <input type="file" id="photo_utilisateur" name="photo_utilisateur" accept="image/*" required>
+        
+        <label for="mot_de_passe">Mot de passe:</label>
+        <input type="password" id="mot_de_passe" name="mot_de_passe" required>
+        
+        <label for="confirmer_mot_de_passe">Confirmer le mot de passe:</label>
+        <input type="password" id="confirmer_mot_de_passe" name="confirmer_mot_de_passe" required>
+        
+        <button type="submit">Ajouter Utilisateur</button>
+    </form>
+</section>
+{% endblock %}

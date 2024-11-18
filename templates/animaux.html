@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoption d'animaux de compagnie</title>
+    <link rel="stylesheet" href="/css/animaux.css">
+    <script src="/js/script.js"></script>
+</head>
+
+<body class="fondRose">
+    <div id="centrerDiv" class="card2">
+        <img src="/images/adoptez moi.jpeg" alt="chien" id="imageChien">
+        <div class="container">
+            <h2 class="ext" id="blanc"><b>{{animal.get("nom")}}</b></h2>
+            <h4 class="ext" id="magenta"><b>{{animal.get("espece")}}</b></h4>
+            <p>{{animal.get("description")}}</p>
+            <br>
+            <p> <span class="ext" class="crimson"> Race : </span> {{animal.get("race")}}</p>
+            <p> <span class="ext" class="crimson"> Âge : </span> {{animal.get("age")}}</p>
+            <p> <span class="ext" class="crimson"> Adresse : </span> {{animal.get("ville")}} - {{animal.get("adresse")}}
+                - CP: {{animal.get("cp")}} </p>
+            <p class="ext"> Contact du propriétaire : <a href="mailto:{{animal.get(" courriel")}}">
+                    {{animal.get("courriel")}} </a></p>
+        </div>
+    </div>
+</body>
+
+</html>

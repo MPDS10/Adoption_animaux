@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoption d'animaux de compagnie</title>
+    <link rel="stylesheet" href="/css/animaux.css">
+    <script src="/js/script.js"></script>
+
+</head>
+
+<body>
+    <div>
+        <h1>Formulaire d'adoption</h1>
+        <div class="formulaireAdoption">
+            <form id="monForm" action="/submit" onsubmit="return validationAdoption();" method="post">
+
+                <div class="attribut">
+                    <label> Entrez le nom de l'animal :</label>
+                    <input type="text" name="nom" id="nom" class="input" value="{{nomAnimal}}">
+                    <p class="error" id="erreurAnimal"> </p>
+                    <br>
+                </div>
+
+                <div class="attribut">
+                    <label> Entrez l'espece de l'animal </label>
+                    <input type="text" name="espece" id="espece" class="input" value="{{especeAnimal}}">
+                    <p class="error" id="erreurEspece"> </p>
+                    <br>
+                </div>
+
+                <div class="attribut">
+                    <label> Entrez la race de l'animal </label>
+                    <input type="text" name="rac" id="race" class="input" value="{{raceAnimal}}">
+                    <p class="error" id="erreurRace"> </p>
+                    <br>
+                </div>
+
+                <div class="attribut">
+                    <label> Entrez l'age de l'animal </label>
+                    <input type="text" name="age" id="age" class="input" value="{{ageAnimal}}">
+
+                    <p class="error" id="erreurAge"> </p>
+                    <br>
+                </div>
+
+                <div class="attribut">
+                    <label> Entrez la description de l'animal </label>
+                    <textarea name="description" id="description" class="input" value="{{desAnimal}}"></textarea>
+                    <p class="error" id="erreurDes"> </p>
+                    <br>
+                </div>
+
+
+                <div class="attribut">
+                    <label> Entrez le courriel du proprietaire </label>
+                    <input type="email" name="email_utilisateur" id="email" class="input" value="{{courrielProprio}}">
+                    <p class="error" id="erreurMail"> </p>
+                    <br>
+                </div>
+
+                <div class="attribut">
+                    <label> Entrez l'adresse de l'animal </label>
+                    <input type="text" name="adresse" id="adresse" class="input" value="{{adresseAnimal}}">
+                    <p class="error" id="erreurAdresse"> </p>
+                    <br>
+                </div>
+
+                <div class="attribut">
+                    <label> Entrez la ville de l'animal </label>
+                    <input type="text" name="ville" id="ville" class="input" value="{{ville}}">
+                    <p class="error" id="erreurVille"> </p>
+                    <br>
+                </div>
+
+                <div class="attribut">
+                    <label> Entrez le code Postal de l'animal </label>
+                    <input type="text" name="cp" id="codepostalAnimal" class="input" value="{{cp}}">
+                    <p class="error" id="erreurCode"> </p>
+                    <br>
+                </div>
+
+
+                <button class="btn-primary" value="Soumettre"> Soumettre </button>
+
+
+
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
